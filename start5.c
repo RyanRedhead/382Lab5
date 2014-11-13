@@ -23,8 +23,8 @@ void main(void) {
 			packetIndex = 0;
 		} // end if new IR packet arrived
 		if (newIrPacket){
-			if(irpacket == VOL_UP)
-			{
+			if(irpacket == VOL_UP) //determines if one of the following buttons was pressed
+			{			//if so, either clear or set one of the bits
 			newIrPacket = FALSE;
 			P1OUT |= BIT6;
 			}
@@ -122,10 +122,10 @@ __interrupt void pinChange (void) {
 		case 0:						// !!!!!!!!!NEGATIVE EDGE!!!!!!!!!!
 			pulseDuration = TAR;
 			TACTL = 0;
-			if(pulseDuration > minLogic0Pulse && pulseDuration < maxLogic0Pulse){
+			if(pulseDuration > minLogic0Pulse && pulseDuration < maxLogic0Pulse){	//for the logic 0
 				irpacket = (irpacket << 1)|0;
 			}
-			if(pulseDuration > minLogic1Pulse && pulseDuration < maxLogic1Pulse){
+			if(pulseDuration > minLogic1Pulse && pulseDuration < maxLogic1Pulse){	//for the logic 1
 				irpacket = (irpacket << 1)|1;
 			}
 			packetData[packetIndex++] = pulseDuration;
