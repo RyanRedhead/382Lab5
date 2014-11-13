@@ -45,13 +45,13 @@ __interrupt void timerOverflow (void);
 #define		minStartPulse		averageStartPulse - 100
 #define		maxStartPulse		averageStartPulse + 100
 
-#define		PWR		0x02FD48B7
+#define		PWR		0x02FD48B7 //The next 5 lines are from the #3 remote
 #define		ZERO	0x02FD00FF
 #define		ONE		0x02FD907F
 #define		TWO		0x02FD40BF
 #define		THR		0x02FDC03F
 
-#define		VOL_UP	0x788700FF
+#define		VOL_UP	0x788700FF //These 4 lines are from the remote used in the first picture
 #define		VOL_DW	0x50AF00FF
 #define		CH_UP	0xA05F00FF
 #define		CH_DW	0x40BF00FF
