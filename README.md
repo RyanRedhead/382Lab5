@@ -32,6 +32,8 @@ Required functionality was achieved by finding the code for each of the button p
 I sent Dr. York a video of the working required functionality.
 
 The following picture shows what the pulse lengths and codes were for the #3 remote. The volume up/down and channel up/down were from the new remote, there is a significant difference between the two remotes. 
-![Alt Text](https://github.com/RyanRedhead/382Lab5/blob/master/Hardware.PNG?raw=true)
+![Alt Text](https://github.com/RyanRedhead/382Lab5/blob/master/Hfiledata.PNG?raw=true)
 
 #Observations/Conclusions
+
+Some observations from this lab include how IR packets are recieved and decoded. Logic 1 pulses are longer and categorized differently which help make up unique 32 bit signatures. Each press does not have the exact pulse lengths so a standard deviation calculated in excel had to be added in.
