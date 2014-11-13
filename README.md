@@ -28,6 +28,7 @@ The first 8 numbers in the irpacket data are the codes for each button press, in
 
 ##Required Functionality
 
-
+Required functionality was achieved by finding the code for each of the button presses and configuring them to either turn on or turn off a LED.
+I sent Dr. York a video of the working required functionality.
 
 #Observations/Conclusions
