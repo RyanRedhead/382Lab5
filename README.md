@@ -31,4 +31,7 @@ The first 8 numbers in the irpacket data are the codes for each button press, in
 Required functionality was achieved by finding the code for each of the button presses and configuring them to either turn on or turn off a LED.
 I sent Dr. York a video of the working required functionality.
 
+The following picture shows what the pulse lengths and codes were for the #3 remote. The volume up/down and channel up/down were from the new remote, there is a significant difference between the two remotes. 
+![Alt Text](https://github.com/RyanRedhead/382Lab5/blob/master/Hardware.PNG?raw=true)
+
 #Observations/Conclusions
